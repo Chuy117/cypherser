@@ -1,79 +1,41 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Ejercicio Cypherser
 
-# Getting Started
+## Objetivo.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+Desarrollar una aplicación que implemente una llamada a un API.
 
-## Step 1: Start the Metro Server
+## Características de la implementación. 
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- Pantalla de Login con opción de correo o autenticación de terceros. 
+- Pantalla de Home en la que se consume un API, creada con Python, en la que se muestra 
+un listado de usuarios. 
+- Pantalla de Contacto en la que se puede ver el perfil del desarrollador. 
+- En la página de contacto, se puede ver el CV del candidato así como de opciones 
+añadidas como perfil de LinkedIn, enviar un email o llamar por teléfono. 
+- Pantalla de escaneo en la que se puede solicitar un análisis o escaneo de una URL válida. 
+- Al momento de pulsar el botón de “escaneo” o “análisis” se valida por expresión regular si 
+la URL es válida o no. 
+- Se añadió un método para transformar una URL en formato base64 y removiendo el 
+carácter = para que una URL sea válida para los endpoints de Virus Total. 
+- Si la URL es válida, se muestra la respuesta a la petición de escaneo o análisis. 
+- Si la URL no es válida, se le informa al usuario.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Requerimientos.
 
-```bash
-# using npm
-npm start
+- NodeJS.
+- IDE de su preferencia (se sugiere VSC). 
+- Emulador de iOS o Android / Dispositivo físico. 
 
-# OR using Yarn
-yarn start
-```
+## Ejecutar aplicación.
 
-## Step 2: Start your Application
+Si se clona la app. 
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+- Clonar repositorio de GitHub. 
+- Abrir una terminal en la raíz del proyecto. 
+- Ejecutar el comando npm install. 
+- Ejecutar comando npm start. 
+- Teclear a para Android / i para iOS. 
 
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+En Android se genera el apk, se instala en el dispositivo cuidando tener el permiso de instalar por 
+fuentes externas; en iOS se puede instalar por medio de XCode. En ambos casos se pueden crear 
+versiones de prueba en las respectivas tiendas en caso de ser necesario.
